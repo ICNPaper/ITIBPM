@@ -20,6 +20,7 @@
 
 
 	<script type="text/javascript">
+		//------
 		var USE_COOKIE = <%=useCookie%>;
 		var COOKIE_EXPIRES = <%=cookieExpires%>;
 		var COOKIE_KEY_SAVE_ID = "<%=LoginService.COOKIE_SAVE_ID%>";
