@@ -1,0 +1,246 @@
+<org.uengine.kernel.ProcessDefinition>
+  <name>
+    <text>DDDD</text>
+  </name>
+  <description/>
+  <cost>0</cost>
+  <retryLimit>0</retryLimit>
+  <retryDelay>60</retryDelay>
+  <isHidden>false</isHidden>
+  <isDynamicChangeAllowed>true</isDynamicChangeAllowed>
+  <isQueuingEnabled>false</isQueuingEnabled>
+  <isFaultTolerant>false</isFaultTolerant>
+  <childActivities class="org.uengine.kernel.ActivityRepository">
+    <org.uengine.kernel.HumanActivity>
+      <parentActivity class="org.uengine.kernel.ProcessDefinition" reference="../../.."/>
+      <name>
+        <text>Human work</text>
+      </name>
+      <description/>
+      <tracingTag>1</tracingTag>
+      <cost>0</cost>
+      <retryLimit>0</retryLimit>
+      <retryDelay>60</retryDelay>
+      <isHidden>false</isHidden>
+      <isDynamicChangeAllowed>true</isDynamicChangeAllowed>
+      <isQueuingEnabled>false</isQueuingEnabled>
+      <isFaultTolerant>false</isFaultTolerant>
+      <message>onHumanActivityResult1</message>
+      <parameters>
+        <org.uengine.kernel.ParameterContext>
+          <argument/>
+          <variable>
+            <name>yesno</name>
+            <displayName>
+              <text>허용여부</text>
+            </displayName>
+            <type>java.lang.Boolean</type>
+            <askWhenInit>false</askWhenInit>
+            <defaultValue class="boolean">false</defaultValue>
+            <isVolatile>false</isVolatile>
+            <isDatabaseSynchronized>false</isDatabaseSynchronized>
+            <databaseSynchronizationOption/>
+          </variable>
+          <transformerMapping/>
+        </org.uengine.kernel.ParameterContext>
+        <org.uengine.kernel.ParameterContext>
+          <argument/>
+          <variable class="org.uengine.kernel.RolePointingProcessVariable">
+            <displayName/>
+            <askWhenInit>false</askWhenInit>
+            <isVolatile>false</isVolatile>
+            <isDatabaseSynchronized>false</isDatabaseSynchronized>
+            <role>
+              <name>emptyRole</name>
+              <roleResolutionContext class="com.defaultcompany.organization.DefaultCompanyRoleResolutionContext">
+                <roleId>TeamReader</roleId>
+              </roleResolutionContext>
+              <dispatchingOption>0</dispatchingOption>
+              <serviceType/>
+              <isHumanWorker>false</isHumanWorker>
+              <askWhenInit>false</askWhenInit>
+              <displayName>
+                <text>emptyRole</text>
+              </displayName>
+              <dontPersistResolutionResult>false</dontPersistResolutionResult>
+            </role>
+          </variable>
+          <transformerMapping/>
+        </org.uengine.kernel.ParameterContext>
+      </parameters>
+      <role>
+        <name>Initiator</name>
+        <dispatchingOption>0</dispatchingOption>
+        <isHumanWorker>false</isHumanWorker>
+        <askWhenInit>false</askWhenInit>
+        <displayName>
+          <text>Initiator</text>
+        </displayName>
+        <dontPersistResolutionResult>false</dontPersistResolutionResult>
+      </role>
+      <tool>defaultHandler</tool>
+      <isSendEmailWorkitem>true</isSendEmailWorkitem>
+      <isNotificationWorkitem>false</isNotificationWorkitem>
+      <isAllowAnonymous>true</isAllowAnonymous>
+      <duration>5</duration>
+      <co2Emission>0</co2Emission>
+      <workload>0</workload>
+      <priority>0</priority>
+      <instruction/>
+      <keyword/>
+    </org.uengine.kernel.HumanActivity>
+    <org.uengine.kernel.SwitchActivity>
+      <parentActivity class="org.uengine.kernel.ProcessDefinition" reference="../../.."/>
+      <name/>
+      <description/>
+      <tracingTag>3</tracingTag>
+      <cost>0</cost>
+      <extendedAttributes>
+        <entry>
+          <string>conditionDescriptions_0</string>
+          <string>허용</string>
+        </entry>
+      </extendedAttributes>
+      <retryLimit>0</retryLimit>
+      <retryDelay>60</retryDelay>
+      <isHidden>false</isHidden>
+      <isDynamicChangeAllowed>true</isDynamicChangeAllowed>
+      <isQueuingEnabled>false</isQueuingEnabled>
+      <isFaultTolerant>false</isFaultTolerant>
+      <childActivities class="org.uengine.kernel.ActivityRepository">
+        <org.uengine.kernel.HumanActivity>
+          <parentActivity class="org.uengine.kernel.SwitchActivity" reference="../../.."/>
+          <name>
+            <text>Human work</text>
+          </name>
+          <description/>
+          <tracingTag>2</tracingTag>
+          <cost>0</cost>
+          <retryLimit>0</retryLimit>
+          <retryDelay>60</retryDelay>
+          <isHidden>false</isHidden>
+          <isDynamicChangeAllowed>true</isDynamicChangeAllowed>
+          <isQueuingEnabled>false</isQueuingEnabled>
+          <isFaultTolerant>false</isFaultTolerant>
+          <message>onHumanActivityResult2</message>
+          <role>
+            <name>nextRole</name>
+            <roleResolutionContext class="com.defaultcompany.organization.DefaultCompanyRoleResolutionContext" reference="../../../../../org.uengine.kernel.HumanActivity/parameters/org.uengine.kernel.ParameterContext[2]/variable/role/roleResolutionContext"/>
+            <dispatchingOption>0</dispatchingOption>
+            <serviceType/>
+            <isHumanWorker>false</isHumanWorker>
+            <askWhenInit>false</askWhenInit>
+            <displayName>
+              <text>nextRole</text>
+            </displayName>
+            <dontPersistResolutionResult>false</dontPersistResolutionResult>
+          </role>
+          <tool>defaultHandler</tool>
+          <isSendEmailWorkitem>true</isSendEmailWorkitem>
+          <isNotificationWorkitem>false</isNotificationWorkitem>
+          <isAllowAnonymous>true</isAllowAnonymous>
+          <duration>5</duration>
+          <co2Emission>0</co2Emission>
+          <workload>0</workload>
+          <priority>0</priority>
+          <instruction/>
+          <keyword/>
+        </org.uengine.kernel.HumanActivity>
+      </childActivities>
+      <conditions>
+        <org.uengine.kernel.Or>
+          <description>
+            <text>허용</text>
+          </description>
+          <conditionsVt>
+            <org.uengine.kernel.And>
+              <description/>
+              <conditionsVt>
+                <org.uengine.kernel.Evaluate>
+                  <description/>
+                  <key>yesno</key>
+                  <pv reference="../../../../../../../../org.uengine.kernel.HumanActivity/parameters/org.uengine.kernel.ParameterContext/variable"/>
+                  <val class="boolean">true</val>
+                  <condition>==</condition>
+                </org.uengine.kernel.Evaluate>
+              </conditionsVt>
+            </org.uengine.kernel.And>
+          </conditionsVt>
+        </org.uengine.kernel.Or>
+      </conditions>
+      <operateAsIfThenElse>false</operateAsIfThenElse>
+    </org.uengine.kernel.SwitchActivity>
+    <org.uengine.kernel.HumanActivity>
+      <parentActivity class="org.uengine.kernel.ProcessDefinition" reference="../../.."/>
+      <name>
+        <text>Human work</text>
+      </name>
+      <description/>
+      <tracingTag>4</tracingTag>
+      <cost>0</cost>
+      <retryLimit>0</retryLimit>
+      <retryDelay>60</retryDelay>
+      <isHidden>false</isHidden>
+      <isDynamicChangeAllowed>true</isDynamicChangeAllowed>
+      <isQueuingEnabled>false</isQueuingEnabled>
+      <isFaultTolerant>false</isFaultTolerant>
+      <message>onHumanActivityResult4</message>
+      <role reference="../../org.uengine.kernel.HumanActivity/parameters/org.uengine.kernel.ParameterContext[2]/variable/role"/>
+      <tool>defaultHandler</tool>
+      <isSendEmailWorkitem>true</isSendEmailWorkitem>
+      <isNotificationWorkitem>false</isNotificationWorkitem>
+      <isAllowAnonymous>true</isAllowAnonymous>
+      <duration>5</duration>
+      <co2Emission>0</co2Emission>
+      <workload>0</workload>
+      <priority>0</priority>
+      <instruction/>
+      <keyword/>
+    </org.uengine.kernel.HumanActivity>
+  </childActivities>
+  <roles>
+    <org.uengine.kernel.Role reference="../../childActivities/org.uengine.kernel.HumanActivity/role"/>
+    <org.uengine.kernel.Role reference="../../childActivities/org.uengine.kernel.SwitchActivity/childActivities/org.uengine.kernel.HumanActivity/role"/>
+    <org.uengine.kernel.Role reference="../../childActivities/org.uengine.kernel.HumanActivity/parameters/org.uengine.kernel.ParameterContext[2]/variable/role"/>
+  </roles>
+  <processVariableDescriptors>
+    <org.uengine.kernel.ProcessVariable reference="../../childActivities/org.uengine.kernel.HumanActivity/parameters/org.uengine.kernel.ParameterContext/variable"/>
+  </processVariableDescriptors>
+  <leaveEventListenersEvenIfOutOfScope>false</leaveEventListenersEvenIfOutOfScope>
+  <isCollapsed>false</isCollapsed>
+  <serviceDefinitions/>
+  <defaultFlowchartViewType>swimlane</defaultFlowchartViewType>
+  <defaultFlowchartViewOption>vertical</defaultFlowchartViewOption>
+  <isAbstract>false</isAbstract>
+  <duration>10</duration>
+  <simulationInstanceCount>10</simulationInstanceCount>
+  <simulationInputFrequency>10</simulationInputFrequency>
+  <simulationInputFrequencyDeviation>0</simulationInputFrequencyDeviation>
+  <revisionInfoList>
+    <org.uengine.kernel.RevisionInfo>
+      <authorName>Tester_ko</authorName>
+      <authorId>test_ko</authorId>
+      <authorEmailAddress> </authorEmailAddress>
+      <authorCompany>uEngine</authorCompany>
+      <changeTime>
+        <time>1434090540910</time>
+        <timezone>Asia/Seoul</timezone>
+      </changeTime>
+      <version>1</version>
+    </org.uengine.kernel.RevisionInfo>
+  </revisionInfoList>
+  <archive>true</archive>
+  <uEngineVersion>0</uEngineVersion>
+  <id>4</id>
+  <version>1</version>
+  <belongingDefinitionId>6</belongingDefinitionId>
+  <isAdhoc>true</isAdhoc>
+  <initiateByFirstWorkitem>true</initiateByFirstWorkitem>
+  <isVolatile>false</isVolatile>
+  <modifiedDate>
+    <time>1434090789000</time>
+    <timezone>Asia/Seoul</timezone>
+  </modifiedDate>
+  <activitySequence>5</activitySequence>
+  <alias>abcd</alias>
+</org.uengine.kernel.ProcessDefinition>

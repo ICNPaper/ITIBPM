@@ -1,0 +1,82 @@
+
+=================================================================================
+==[ uEngine Application Execution Log ]==========================================
+=================================================================================
+EJBProcessInstance: instanceId is set by 42
+ * Definition administration url = /uengine-web/processmanager/viewProcessFlowChart.jsp?processDefinition=26&processDefinitionVersionID=23
+ * Process Designer launch url = /uengine-web/processmanager/ProcessDesigner.jnlp?defVerId=23&defId=26
+ * Instance administration url = /uengine-web/processmanager/viewProcessInformation.jsp?instanceId=42
+
+ * Initial Variable 'frm1' = <org.uengine.contexts.HtmlFormContext>
+  <formDefId>[frmsettrouble]@20</formDefId>
+  <filePath>2017/2/2/42_20170202130608666.xml</filePath>
+</org.uengine.contexts.HtmlFormContext>
+ * Initial Variable 'frm2' = <org.uengine.contexts.HtmlFormContext>
+  <formDefId>[frmsetrightperson]@21</formDefId>
+  <filePath>2017/2/2/42_2017020213063774.xml</filePath>
+</org.uengine.contexts.HtmlFormContext>
+ * Initial Variable 'frm3' = <org.uengine.contexts.HtmlFormContext>
+  <formDefId>[frsresult]@22</formDefId>
+</org.uengine.contexts.HtmlFormContext>
+ * Initial Variable 'trouble_result' = <null/>
+
+ * Initial RoleMapping 'Initiator' = <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester_ko</resourceName>
+  <endpoint>test_ko</endpoint>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <isGroup>false</isGroup>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+ * Initial RoleMapping 'manager' = <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester</resourceName>
+  <endpoint>test</endpoint>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <isGroup>false</isGroup>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+ * Initial RoleMapping 'rightperson' = <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester</resourceName>
+  <endpoint>test</endpoint>
+  <assignType>0</assignType>
+  <dispatchingOption>0</dispatchingOption>
+  <isMale>true</isMale>
+  <isGroup>false</isGroup>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = 처리결과입력(3)
+ * instance = 42
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=42&tracingTag=3&defVerId=23
+ * Form administration url = /uengine-web/processmanager/viewFormDefinition.jsp?objectDefinitionId=[frsresult]&processDefinitionVersionID=22
+ * Form data XML path = D:\uengine3.5.5_standalone_old\was(20170202)\bin\.\uengine\definition\2017\2\2\42_20170202130651597.xml
+
+ --- [Set Variable] --------------------
+  * name : frm3
+  * value : 
+<org.uengine.contexts.HtmlFormContext>
+  <formDefId>[frsresult]@22</formDefId>
+  <filePath>2017/2/2/42_20170202130651597.xml</filePath>
+</org.uengine.contexts.HtmlFormContext>
+ ---------------------------------------
+ --- [Set Variable] --------------------
+  * name : trouble_result
+  * value : 
+<string>삭제후 다시 설치하면 작동합니다</string>
+ ---------------------------------------
+
+
+-- Execute LocalEMailActivity 	---------------------------------------
+
+ * name = 처리결과확인(5)
+ * instance = 42
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=42&tracingTag=5&defVerId=23

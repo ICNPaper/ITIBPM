@@ -1,0 +1,50 @@
+
+=================================================================================
+==[ uEngine Application Execution Log ]==========================================
+=================================================================================
+
+
+-- Execute FormApprovalLineActivity 	---------------------------------------
+
+ * name = (11)
+ * instance = 12
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=12&tracingTag=11&defVerId=9
+
+
+-- Execute FormApprovalActivity 	---------------------------------------
+
+ * name = Draft(12)
+ * instance = 12
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=12&tracingTag=12&defVerId=9
+
+
+-- Execute FormApprovalActivity 	---------------------------------------
+
+ * name = Draft(12)
+ * instance = 12
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=12&tracingTag=12&defVerId=9
+ * Form administration url = /uengine-web/processmanager/viewFormDefinition.jsp?objectDefinitionId=[approvalForm]&processDefinitionVersionID=8
+ * Form data XML path = C:\uengine\uengine3.5.5_standalone_origin\was\bin\.\uengine\definition\2015\7\21\12_2015072117491173.xml
+
+ --- [Set Variable] --------------------
+  * name : 결재양식
+  * value : 
+<org.uengine.contexts.HtmlFormContext>
+  <formDefId>[approvalForm]@8</formDefId>
+  <filePath>2015/7/21/12_2015072117491173.xml</filePath>
+</org.uengine.contexts.HtmlFormContext>
+ ---------------------------------------
+
+
+-- Execute AllActivity 	---------------------------------------
+
+ * name = All(13)
+ * instance = 12
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=12&tracingTag=13&defVerId=9
+
+
+-- Execute FormApprovalActivity 	---------------------------------------
+
+ * name = donghyun Lee (동의)(14)
+ * instance = 12
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=12&tracingTag=14&defVerId=9

@@ -1,0 +1,114 @@
+<map>
+  <entry>
+    <string>1:_completed rolemapping:prop</string>
+    <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+      <name>Initiator</name>
+      <resourceName>Tester_ko</resourceName>
+      <emailAddress> </emailAddress>
+      <endpoint>test_ko</endpoint>
+      <companyId>uEngine</companyId>
+      <groupId>TestGroup</groupId>
+      <title>Tester</title>
+      <assignType>0</assignType>
+      <dispatchingOption>-1</dispatchingOption>
+      <isMale>true</isMale>
+      <birthday>2016-03-28 13:52:25.437 KST</birthday>
+      <isGroup>false</isGroup>
+      <locale>ko</locale>
+      <cursor>0</cursor>
+      <isSingle>false</isSingle>
+    </com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  </entry>
+  <entry>
+    <string>:MESSAGE_onHumanActivityResult1:prop</string>
+    <string>1</string>
+  </entry>
+  <entry>
+    <string>2:_task id:prop</string>
+    <string>55</string>
+  </entry>
+  <entry>
+    <string>2:_status:prop</string>
+    <string>Running</string>
+  </entry>
+  <entry>
+    <string>2:_previous:prop</string>
+    <string>1</string>
+  </entry>
+  <entry>
+    <string>1:_task id:prop</string>
+    <string>53</string>
+  </entry>
+  <entry>
+    <string>:MESSAGE_onHumanActivityResult2:prop</string>
+    <string>2</string>
+  </entry>
+  <entry>
+    <string>:_status:prop</string>
+    <string>Running</string>
+  </entry>
+  <entry>
+    <string>:currentStep:prop</string>
+    <int>1</int>
+  </entry>
+  <entry>
+    <string>1:_start_time:prop</string>
+    <gregorian-calendar>
+      <time>1459140745455</time>
+      <timezone>Asia/Seoul</timezone>
+    </gregorian-calendar>
+  </entry>
+  <entry>
+    <string>:_start_time:prop</string>
+    <gregorian-calendar>
+      <time>1459140745450</time>
+      <timezone>Asia/Seoul</timezone>
+    </gregorian-calendar>
+  </entry>
+  <entry>
+    <string>2:_due date:prop</string>
+    <gregorian-calendar>
+      <time>1459572745506</time>
+      <timezone>Asia/Seoul</timezone>
+    </gregorian-calendar>
+  </entry>
+  <entry>
+    <string>:_due date:prop</string>
+    <gregorian-calendar>
+      <time>1460004745450</time>
+      <timezone>Asia/Seoul</timezone>
+    </gregorian-calendar>
+  </entry>
+  <entry>
+    <string>2:_start_time:prop</string>
+    <gregorian-calendar>
+      <time>1459140745500</time>
+      <timezone>Asia/Seoul</timezone>
+    </gregorian-calendar>
+  </entry>
+  <entry>
+    <string>1:_due date:prop</string>
+    <gregorian-calendar>
+      <time>1459572745457</time>
+      <timezone>Asia/Seoul</timezone>
+    </gregorian-calendar>
+  </entry>
+  <entry>
+    <string>1:_status:prop</string>
+    <string>Completed</string>
+  </entry>
+  <entry>
+    <string>1:_end_time:prop</string>
+    <gregorian-calendar>
+      <time>1459140745493</time>
+      <timezone>Asia/Seoul</timezone>
+    </gregorian-calendar>
+  </entry>
+  <entry>
+    <string>:frmmakeisu</string>
+    <org.uengine.contexts.HtmlFormContext>
+      <formDefId>[frmmakeisu]@0</formDefId>
+      <filePath>2016/3/28/36_20160328135225469.xml</filePath>
+    </org.uengine.contexts.HtmlFormContext>
+  </entry>
+</map>
