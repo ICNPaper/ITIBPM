@@ -1,3 +1,0 @@
-val = pm.getProcessVariable("<%=instanceId%>", "", "name");
-
-return val

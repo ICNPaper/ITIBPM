@@ -1,3 +1,0 @@
-pm.flowControl("resume", "<%=InstanceID%>", "_1_1");
-
-<%=seeStatus%>

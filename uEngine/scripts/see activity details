@@ -1,3 +1,0 @@
-map = pm.getActivityDetails("<%=instanceID%>", "_0_0");
-	 
-return map.get("fault.details");
