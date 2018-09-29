@@ -1,0 +1,37 @@
+
+=================================================================================
+==[ uEngine Application Execution Log ]==========================================
+=================================================================================
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = form(1)
+ * instance = 10
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=10&tracingTag=1&defVerId=7
+   --- [Set Role] --------------------
+    * name : Initiator
+    * value : <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester_ko</resourceName>
+  <emailAddress> </emailAddress>
+  <endpoint>test_ko</endpoint>
+  <companyId>uEngine</companyId>
+  <groupId>TestGroup</groupId>
+  <title>Tester</title>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <birthday>2015-07-13 16:12:10.233 KST</birthday>
+  <isGroup>false</isGroup>
+  <locale>ko</locale>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+   -----------------------------------
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = form(1)
+ * instance = 10
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=10&tracingTag=1&defVerId=7

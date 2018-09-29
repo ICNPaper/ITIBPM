@@ -1,0 +1,37 @@
+
+=================================================================================
+==[ uEngine Application Execution Log ]==========================================
+=================================================================================
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = 장애등록(2)
+ * instance = 42
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=42&tracingTag=2&defVerId=23
+   --- [Set Role] --------------------
+    * name : Initiator
+    * value : <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester_ko</resourceName>
+  <emailAddress>m05214@uengine.org</emailAddress>
+  <endpoint>test_ko</endpoint>
+  <companyId>uEngine</companyId>
+  <groupId>TestGroup</groupId>
+  <title>Tester</title>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <birthday>2017-02-02 13:06:08.604 KST</birthday>
+  <isGroup>false</isGroup>
+  <locale>ko</locale>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+   -----------------------------------
+
+
+-- Execute FormActivity 	---------------------------------------
+
+ * name = 장애등록(2)
+ * instance = 42
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=42&tracingTag=2&defVerId=23

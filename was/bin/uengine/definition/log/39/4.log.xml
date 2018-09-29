@@ -1,0 +1,41 @@
+
+=================================================================================
+==[ uEngine Application Execution Log ]==========================================
+=================================================================================
+EJBProcessInstance: instanceId is set by 39
+ * Definition administration url = /uengine-web/processmanager/viewProcessFlowChart.jsp?processDefinition=20&processDefinitionVersionID=18
+ * Process Designer launch url = /uengine-web/processmanager/ProcessDesigner.jnlp?defVerId=18&defId=20
+ * Instance administration url = /uengine-web/processmanager/viewProcessInformation.jsp?instanceId=39
+
+ * Initial Variable 'trouble_desc' = <string>세스템이 제대로 작동하지 않습니다. </string>
+ * Initial Variable 'trouble_class' = <string>system</string>
+ * Initial Variable 'trouble_result' = <null/>
+
+ * Initial RoleMapping 'user' = <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester_ko</resourceName>
+  <endpoint>test_ko</endpoint>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <isGroup>false</isGroup>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+ * Initial RoleMapping 'manager' = <com.defaultcompany.organization.DefaultCompanyRoleMapping>
+  <resourceName>Tester</resourceName>
+  <endpoint>test</endpoint>
+  <assignType>0</assignType>
+  <dispatchingOption>-1</dispatchingOption>
+  <isMale>true</isMale>
+  <isGroup>false</isGroup>
+  <cursor>0</cursor>
+  <isSingle>false</isSingle>
+</com.defaultcompany.organization.DefaultCompanyRoleMapping>
+ * Initial RoleMapping 'rightperson' = <null/>
+
+
+-- Execute HumanActivity 	---------------------------------------
+
+ * name = 처리자 선정(4)
+ * instance = 39
+ * definition = /uengine-web/processmanager/activityChangeForm.jsp?instId=39&tracingTag=4&defVerId=18

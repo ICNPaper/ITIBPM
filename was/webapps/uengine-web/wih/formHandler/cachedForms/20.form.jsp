@@ -1,0 +1,4 @@
+<p>
+	장애내용:<textarea cols="80" name="trouble_desc" rows="5"></textarea></p>
+<p>
+	장애분류:<select name="trouble_class"><option value="system">시스템 오류</option><option value="hardware">하드웨어 오류</option><option value="req">개선</option></select></p>
